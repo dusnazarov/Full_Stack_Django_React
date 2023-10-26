@@ -19,7 +19,7 @@ class Server(models.Model):
     def __str__(self):
        return f"{self.name}-{self.id}"
 
-    
+
 
 class Channel(models.Model):
     name = models.CharField(max_length=100)
@@ -29,7 +29,7 @@ class Channel(models.Model):
 
     def save(self, *args, **kwargs):
         self.name = self.name.lower()
-        super(Channel, self).save(*args,**kwargs)
+        super(Channel, self).save(*args, **kwargs)
 
     def __str__(self):
        return self.name

@@ -23,7 +23,6 @@ from django.db.models import Count
 
 
 # # 2) ////////////////////////////////
-
 class ServerListViewSet(viewsets.ViewSet):
     queryset = Server.objects.all()
 
